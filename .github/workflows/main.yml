@@ -22,8 +22,8 @@ jobs:
           script: |
             cd /home/rajni/frontendkiza/
             git pull origin main
-            npm i
-            npm run build
+            sudo npm i
+            sudo npm run build
             cd dist/front-end/
             sudo npm i pm2 -g
             pm2 start --name "Kiza Frontend" /home/rajni/.nvm/versions/node/v24.18.0/bin/http-server -- -p 4200 -d false
