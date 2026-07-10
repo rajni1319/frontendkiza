@@ -25,5 +25,5 @@ jobs:
             npm i
             npm run build
             cd dist/front-end/
-            npm i pm2 -g
+            sudo npm i pm2 -g
             pm2 start --name "Kiza Frontend" /home/rajni/.nvm/versions/node/v24.18.0/bin/http-server -- -p 4200 -d false
